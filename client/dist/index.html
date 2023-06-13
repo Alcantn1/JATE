@@ -1,24 +1,69 @@
-Html Webpack Plugin:
+<head><script defer src="main.bundle.js"></script><script defer src="install.bundle.js"></script><meta name="theme-color" content="#225ca3" /><link rel="manifest" href="auto/manifest.3f5cc744656e953513512b478cbfc2f8.json" /></head>Html Webpack Plugin:
 <pre>
-  TypeError: (0 , _icons.retrieveIcons) is not a function
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve '/Users/nicoalcantara/jate/JATE/client/client/index.html' in '/Users/nicoalcantara/jate/JAT  E/client'
+  ModuleNotFoundError: Module not found: Error: Can't resolve '/Users/nicoalcantara/jate/JATE/client/client/index.html' in '/Users/n  icoalcantara/jate/JATE/client'
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/Compilation.js:2022:28
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:817:13
+      at eval (eval at create (/Users/nicoalcantara/jate/JATE/client/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>  :10:1)
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/nicoalcantara/jate/JATE/client/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>  :9:1)
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:448:22
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:122:11
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:689:25
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:893:8
+      at /Users/nicoalcantara/jate/JATE/client/node_modules/webpack/lib/NormalModuleFactory.js:1013:5
   
-  - index.js:102 buildResources
-    [client]/[webpack-pwa-manifest]/dist/injector/index.js:102:93
+  - Compilation.js:2022 
+    [client]/[webpack]/lib/Compilation.js:2022:28
   
-  - tapable.js:32 
-    [client]/[webpack-pwa-manifest]/dist/generators/tapable.js:32:36
-  
-  
-  - new Promise
+  - NormalModuleFactory.js:817 
+    [client]/[webpack]/lib/NormalModuleFactory.js:817:13
   
   
-  - Hook.js:22 Hook.PROMISE_DELEGATE [as _promise]
-    [client]/[tapable]/lib/Hook.js:22:14
+  - NormalModuleFactory.js:275 
+    [client]/[webpack]/lib/NormalModuleFactory.js:275:22
   
-  - index.js:396 
-    [client]/[html-webpack-plugin]/index.js:396:72
   
-  - task_queues:95 process.processTicksAndRejections
-    node:internal/process/task_queues:95:5
+  - NormalModuleFactory.js:448 
+    [client]/[webpack]/lib/NormalModuleFactory.js:448:22
+  
+  - NormalModuleFactory.js:122 
+    [client]/[webpack]/lib/NormalModuleFactory.js:122:11
+  
+  - NormalModuleFactory.js:689 
+    [client]/[webpack]/lib/NormalModuleFactory.js:689:25
+  
+  - NormalModuleFactory.js:893 
+    [client]/[webpack]/lib/NormalModuleFactory.js:893:8
+  
+  - NormalModuleFactory.js:1013 
+    [client]/[webpack]/lib/NormalModuleFactory.js:1013:5
+  
+  - child-compiler.js:169 
+    [client]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [client]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [client]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1198 
+    [client]/[webpack]/lib/Compiler.js:1198:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [client]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1194 
+    [client]/[webpack]/lib/Compiler.js:1194:33
+  
+  - Compilation.js:2795 finalCallback
+    [client]/[webpack]/lib/Compilation.js:2795:11
+  
+  - Compilation.js:3100 
+    [client]/[webpack]/lib/Compilation.js:3100:11
+  
   
 </pre>
